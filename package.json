@@ -1,0 +1,21 @@
+{
+  "name": "async-import-testing",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "workspaces": [
+    "packages/api",
+    "packages/main"
+  ],
+  "scripts": {
+    "build": "npm run build --ws",
+    "watch": "npm run watch --ws"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}

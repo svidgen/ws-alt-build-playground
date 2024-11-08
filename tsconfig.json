@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": ["esnext", "es6", "dom", "es2022", "es2015"],
+    "target": "es2017",
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "sourceMap": true
+  },
+  "exclude": ["node_modules", "**/node_modules/*"]
+}

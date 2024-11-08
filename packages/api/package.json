@@ -1,0 +1,13 @@
+{
+  "name": "generate-api",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist.ts",
+  "scripts": {
+    "build": "tsx index.ts > dist.ts",
+    "watch": "tsx --watch index.ts > dist.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
