@@ -1,3 +1,3 @@
-import { stuff } from "generate-api";
+import { stuff, things } from "generate-api";
 
-console.log(stuff);
+console.log(stuff, things);

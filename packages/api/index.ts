@@ -1,4 +1,5 @@
 import { writeFileSync } from "fs";
+import { format } from "prettier";
 
 const stuff = [] as number[];
 
@@ -6,9 +7,18 @@ for (let i = 0; i < 10; i++) {
   stuff.push(i);
 }
 
-const dist = `
-  const stuff = ${JSON.stringify(stuff, null, 2)} as const;
-  export { stuff };
-`;
+const things = {
+  a: "something",
+  y: "something else",
+};
 
-writeFileSync("dist.ts", dist);
+format(
+  `
+  const stuff = ${JSON.stringify(stuff, null, 2)} as const;
+  const things = ${JSON.stringify(things, null, 2)} as const;
+  export { stuff, things };
+`,
+  {
+    parser: "typescript",
+  }
+).then((output) => writeFileSync("dist.ts", output));
