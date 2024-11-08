@@ -4,10 +4,13 @@
   "type": "module",
   "main": "dist.ts",
   "scripts": {
-    "build": "tsx index.ts > dist.ts",
-    "watch": "tsx --watch index.ts > dist.ts"
+    "build": "tsx index.ts",
+    "watch": "tsx --watch index.ts"
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.9.0"
+  }
 }
