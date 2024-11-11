@@ -12,6 +12,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "generate-api": "*"
+    "lib": "*"
   }
 }
