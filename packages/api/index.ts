@@ -8,7 +8,7 @@ for (let i = 0; i < 16; i++) {
 }
 
 const things = {
-  something: "else",
+  a: "something",
   y: "something else",
 };
 
