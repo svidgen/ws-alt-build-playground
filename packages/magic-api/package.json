@@ -1,5 +1,5 @@
 {
-  "name": "generate-api",
+  "name": "magic-api",
   "version": "1.0.0",
   "type": "module",
   "main": "dist.ts",

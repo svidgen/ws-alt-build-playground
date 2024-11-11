@@ -5,11 +5,12 @@
   "main": "index.js",
   "workspaces": [
     "packages/api",
-    "packages/main"
+    "packages/main",
+    "packages/magic-api"
   ],
   "scripts": {
-    "build": "npm run build -ws ",
-    "watch": "concurrently \"npm run watch -w main\" \"npm run watch -w api\""
+    "build": "npm run build -ws",
+    "watch": "node scripts/watch.js"
   },
   "author": "",
   "license": "ISC",
