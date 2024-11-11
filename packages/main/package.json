@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc --outDir ./dist index.ts",
-    "watch": "tsc --outDir ./dist --watch index.ts"
+    "build": "esbuild index.ts --bundle --outdir=./dist",
+    "watch": "esbuild --watch index.ts --bundle --outdir=./dist"
   },
   "author": "",
   "license": "ISC",

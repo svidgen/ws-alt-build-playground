@@ -3,12 +3,12 @@ import { format } from "prettier";
 
 const stuff = [] as number[];
 
-for (let i = 0; i < 16; i++) {
+for (let i = 0; i < 10; i++) {
   stuff.push(i);
 }
 
 const things = {
-  something: "else",
+  a: "something",
   y: "something else",
 };
 

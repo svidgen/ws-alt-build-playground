@@ -8,13 +8,16 @@
     "packages/main"
   ],
   "scripts": {
-    "build": "npm run build --ws",
-    "watch": "npm run watch --ws"
+    "build": "npm run build -ws ",
+    "watch": "concurrently \"npm run watch -w main\" \"npm run watch -w api\""
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "concurrently": "^9.1.0",
+    "esbuild": "^0.24.0",
+    "rollup": "^4.25.0",
     "tsx": "^4.19.2",
     "typescript": "^5.6.3"
   }
