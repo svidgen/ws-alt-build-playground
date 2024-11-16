@@ -1,4 +1,4 @@
-packages/api/dist.ts
+packages/lib/dist.ts
 packages/main/dist
 node_modules
 packages/*/node_modules
